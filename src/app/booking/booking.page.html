@@ -1,0 +1,71 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Booking
+      </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+      <ion-item>
+        <ion-label position="floating">Enter Name</ion-label>
+        <ion-input placeholder="Name"></ion-input>
+      </ion-item>
+      &nbsp;
+      <ion-item>
+        <ion-label position="floating">Phone Number</ion-label>
+        <ion-input placeholder="Phone Number"></ion-input>
+      </ion-item>
+      &nbsp;
+      <ion-item>
+        <ion-label position="floating">Email Address</ion-label>
+        <ion-input placeholder="Email"></ion-input>
+      </ion-item>
+      &nbsp; 
+      <ion-item>
+        <ion-label>Select Room</ion-label>
+        <ion-select placeholder="Select One">
+          <ion-select-option value="single">Single Room</ion-select-option>
+          <ion-select-option value="double">Double Room</ion-select-option>
+          <ion-select-option value="deluxe">Deluxe Room</ion-select-option>
+        </ion-select>
+      </ion-item>
+      &nbsp;
+      <ion-row>
+          <ion-col size="6">
+      <ion-item >
+          <ion-label>Adults</ion-label>
+          <ion-select placeholder="Select One">
+            <ion-select-option value="0">0</ion-select-option>
+            <ion-select-option value="1">1</ion-select-option>
+            <ion-select-option value="2">2</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </ion-col>
+      <ion-col size="6">
+        <ion-item >
+            <ion-label>Childern</ion-label>
+            <ion-select placeholder="Select One">
+              <ion-select-option value="0">0</ion-select-option>
+              <ion-select-option value="1">1</ion-select-option>
+              <ion-select-option value="2">2</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      &nbsp;
+      <ion-row>
+          <ion-col size="6">
+            <ion-button (click)="dateClick()"><i class="fa fa-calendar"></i>&nbsp;Check in</ion-button>
+          </ion-col>
+          <ion-col size="6" text-right>
+            <ion-button (click)="dateClick()"><i class="fa fa-calendar"></i>&nbsp;Check Out</ion-button>
+          </ion-col>
+        </ion-row>
+    </ion-list>
+    <ion-button color="primary" expand="block">Booking Room</ion-button>     
+</ion-content>

@@ -1,0 +1,7 @@
+{
+  "name": "eagleEye",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
