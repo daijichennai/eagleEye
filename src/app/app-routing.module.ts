@@ -20,7 +20,14 @@ const routes: Routes = [
   { path: 'photos', loadChildren: './photos/photos.module#PhotosPageModule' },
   { path: 'rooms', loadChildren: './rooms/rooms.module#RoomsPageModule' },
   { path: 'services', loadChildren: './services/services.module#ServicesPageModule' },
-  { path: 'booking', loadChildren: './booking/booking.module#BookingPageModule' }
+  { path: 'booking', loadChildren: './booking/booking.module#BookingPageModule' },
+  { path: 'location', loadChildren: './location/location.module#LocationPageModule' },
+  { path: 'aboutus', loadChildren: './aboutus/aboutus.module#AboutusPageModule' },
+  { path: 'contactus', loadChildren: './contactus/contactus.module#ContactusPageModule' },
+  { path: 'tariff', loadChildren: './tariff/tariff.module#TariffPageModule' },
+  { path: 'testimonials', loadChildren: './testimonials/testimonials.module#TestimonialsPageModule' },
+  { path: 'brochure', loadChildren: './brochure/brochure.module#BrochurePageModule' }
+
 ];
 
 @NgModule({

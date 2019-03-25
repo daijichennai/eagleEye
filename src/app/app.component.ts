@@ -16,41 +16,59 @@ export class AppComponent {
       icon: 'fa fa-home'
     },
     {
-      title: 'Room',
+      title: 'Our Rooms',
       url: '/rooms',
       icon: 'fa fa-sign-in'
     },
     {
-      title: 'News & Events',
-      url: '/newsevents',
-      icon: 'fa fa-newspaper-o'
+      title: 'Our Service',
+      url: '/services',
+      icon: 'fa fa-coffee'
+    },
+    {
+      title: 'Location',
+      url: '/location',
+      icon: 'fa fa-map-marker'
+    }, 
+    {
+      title: 'Photo Gallery',
+      url: '/photos',
+      icon: 'fa fa-picture-o'
+    },
+    {
+      title: 'Tariff',
+      url: '/tariff',
+      icon: 'fa fa-file-o'
     },
     {
       title: 'Booking',
       url: '/booking',
       icon: 'fa fa-book'
     },
-    
+   
     {
-      title: 'Photo Gallery',
-      url: '/photos',
-      icon: 'fa fa-picture-o'
-    },
-     {
-      title: 'Service',
-      url: '/services',
-      icon: 'fa fa-coffee'
-    },
+      title: 'News & Events',
+      url: '/newsevents',
+      icon: 'fa fa-newspaper-o'
+    },        
     {
-      title: 'About Us ',
-      url: '/aboutus',
-      icon: 'fa fa-users'
+      title: 'Testimonials',
+      url: '/testimonials',
+      icon: 'fa fa-comment-o'
     },
+   
     {
       title: 'Contact Us',
       url: '/contactus',
       icon: 'fa fa-phone-square'
-    }  
+    } ,
+    
+    {
+      title: 'About Us ',
+      url: '/aboutus',
+      icon: 'fa fa-users'
+    }
+     
   ];
 
   constructor(

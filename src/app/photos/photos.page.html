@@ -10,10 +10,10 @@
 </ion-header>
 
 <ion-content padding>
-<ion-slides [options]="sliderOpts">
-  <ion-slide *ngFor="let img of [1, 2, 3]">
+<ion-card >
+  <div class="grid-item" *ngFor="let img of [1, 2, 3, 4]">
     <img src="./assets/images/{{ img }}.jpg" tappable (click)="openPreview(img)">
-  </ion-slide>
-</ion-slides>
-  
+  </div >
+</ion-card>
+
 </ion-content>

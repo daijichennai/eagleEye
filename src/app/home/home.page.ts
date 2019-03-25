@@ -39,6 +39,10 @@ export class HomePage {
     this.router.navigate(['services']);
    
   }
+  goToBrochurePage() {
+    this.router.navigate(['brochure']);
+   
+  }
   
   
  

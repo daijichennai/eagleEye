@@ -21,7 +21,7 @@
           </ion-slide>          
         </ion-slides>
      
-      <img style="margin-top: 10px;" src="./assets/images/banner2.jpg" />  
+      <img style="margin-top: 1px;" src="../../assets/images/trekkingBanner.png" />  
       <!-- <ion-row>
         <ion-col size="6">
           <ion-button (click)="dateClick()"><i class="fa fa-calendar"></i>&nbsp;Check in</ion-button>          
@@ -30,12 +30,11 @@
           <ion-button (click)="dateClick()"><i class="fa fa-calendar"></i>&nbsp;Check Out</ion-button>
         </ion-col>
       </ion-row> -->
-      <ion-button color="primary" (click)="goToBookingPage()" expand="block">Booking Room</ion-button>
-      <ion-card padding>
-        <h3>ROOMS & SERVICES</h3>   
-      </ion-card>
+   
      
-      <ion-card (click)="goToRoomPage()">
+     
+      <ion-card >
+        <div (click)="goToRoomPage()">
         <ion-card-header>
             <img src="../../assets/images/single_room.jpg" />
           <ion-card-title>Single Room</ion-card-title>
@@ -45,80 +44,91 @@
           Keep close to Nature's heart... and break clear away, once in awhile,
           and climb a mountain or spend a week in the woods. Wash your spirit clean.
         </ion-card-content>
-        <ion-grid fixed="false">
+        
             <ion-row>
-              <ion-col align-self-start>
-                <ion-button fill="clear">
-                  <ion-icon slot="start" name="cloudy-night"></ion-icon>
-                 Rs. 800
+              <ion-col size="4">
+                <ion-button style="text-transform: none;"  fill="clear">
+                    Per Night Rs. 800/-
                 </ion-button> 
               </ion-col>
-              <ion-col align-self-center> &nbsp;
+              <ion-col size="4"> &nbsp;
               </ion-col>
-              <ion-col align-self-end>
-                <ion-button fill="clear" (click)="goToBookingPage()">
-                  <ion-icon name="bookmarks"></ion-icon>&nbsp;Booking
-                </ion-button> 
+              <ion-col size="4">
+                  <ion-button fill="clear">                 
+                  <ion-icon name="desktop"></ion-icon>
+                  <ion-icon name="restaurant"></ion-icon>                  
+              </ion-button>
               </ion-col>
             </ion-row>
-          </ion-grid>
+         
+        </div>
+          <ion-button color="primary" (click)="goToBookingPage()" expand="block">Book Room</ion-button>
       </ion-card>
-      <ion-card (click)="goToRoomPage()">
-    <ion-card-header>
-        <img src="../../assets/images/double_room.jpg" />
-      <ion-card-title>Double Room</ion-card-title>
-    </ion-card-header>
-  
-    <ion-card-content>
-      Keep close to Nature's heart... and break clear away, once in awhile,
-      and climb a mountain or spend a week in the woods. Wash your spirit clean.
-    </ion-card-content>
-    <ion-grid fixed="false">
-        <ion-row>
-          <ion-col align-self-start>
-            <ion-button fill="clear">
-              <ion-icon slot="start" name="cloudy-night"></ion-icon>
-             Rs. 1000
-            </ion-button> 
-          </ion-col>
-          <ion-col align-self-center> &nbsp;
-          </ion-col>
-          <ion-col align-self-end>
-            <ion-button fill="clear" (click)="goToBookingPage()">
-              <ion-icon name="bookmarks"></ion-icon>&nbsp;Booking
-            </ion-button> 
-          </ion-col>
-        </ion-row>
-      </ion-grid>
-  </ion-card>
-  <ion-card (click)="goToRoomPage()">
-      <ion-card-header>
-          <img src="../../assets/images/deluxe_room.jpg" />
-        <ion-card-title>Deluxe Room</ion-card-title>
-      </ion-card-header>
-    
-      <ion-card-content>
-        Keep close to Nature's heart... and break clear away, once in awhile,
-        and climb a mountain or spend a week in the woods. Wash your spirit clean.
-      </ion-card-content>
-      <ion-grid fixed="false">
-          <ion-row>
-            <ion-col align-self-start>
-              <ion-button fill="clear">
-                <ion-icon slot="start" name="cloudy-night"></ion-icon>
-               Rs. 1800
-              </ion-button> 
-            </ion-col>
-            <ion-col align-self-center> &nbsp;
-            </ion-col>
-            <ion-col align-self-end>
-              <ion-button fill="clear" (click)="goToBookingPage()">
-                <ion-icon name="bookmarks"></ion-icon>&nbsp;Booking
-              </ion-button> 
-            </ion-col>
-          </ion-row>
-        </ion-grid>
-    </ion-card>
+      <ion-card >
+          <div (click)="goToRoomPage()">
+          <ion-card-header>
+              <img src="../../assets/images/double_room.jpg" />
+            <ion-card-title>Double Room</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+          
+              <ion-row>
+                <ion-col size="4">
+                  <ion-button style="text-transform: none;" fill="clear">
+                      Per Night Rs. 1000/-
+                  </ion-button> 
+                </ion-col>
+                <ion-col size="4"> &nbsp;
+                </ion-col>
+                <ion-col size="4">
+                    <ion-button fill="clear">    
+                        <ion-icon name="logo-rss"></ion-icon>             
+                    <ion-icon name="desktop"></ion-icon>
+                    <ion-icon name="restaurant"></ion-icon>                  
+                </ion-button>
+                </ion-col>
+              </ion-row>
+           
+          </div>
+            <ion-button color="primary" (click)="goToBookingPage()" expand="block">Book Room</ion-button>
+        </ion-card>
+        <ion-card >
+            <div (click)="goToRoomPage()">
+            <ion-card-header>
+                <img src="../../assets/images/deluxe_room.jpg" />
+              <ion-card-title>Deluxe Room</ion-card-title>
+            </ion-card-header>
+          
+            <ion-card-content>
+              Keep close to Nature's heart... and break clear away, once in awhile,
+              and climb a mountain or spend a week in the woods. Wash your spirit clean.
+            </ion-card-content>
+            
+                <ion-row>
+                  <ion-col size="6">
+                      <ion-button style="text-transform: none;" fill="clear">
+                        Per Night Rs. 1800/-
+                      </ion-button>
+                  </ion-col>
+                  <ion-col size="2"> &nbsp;
+                  </ion-col>
+                  <ion-col size="4">
+                      <ion-button fill="clear">   
+                      <ion-icon name="logo-rss"></ion-icon>              
+                      <ion-icon name="desktop"></ion-icon>
+                      <ion-icon name="restaurant"></ion-icon>  
+                      <ion-icon name="contacts"></ion-icon>                
+                  </ion-button>
+                  </ion-col>
+                </ion-row>
+             
+            </div>
+              <ion-button color="primary" (click)="goToBookingPage()" expand="block">Book Room</ion-button>
+          </ion-card>
   <ion-card >
     <div (click)="goToServicePage()">
       <ion-card-header>
@@ -131,17 +141,17 @@
         and climb a mountain or spend a week in the woods. Wash your spirit clean.
       </ion-card-content>
     </div>
-      <ion-grid fixed="false">
+      <!-- <ion-grid fixed="false">
           <ion-row>              
             <ion-col align-self-center> &nbsp;
             </ion-col>
             <ion-col align-self-end>
-              <ion-button fill="clear" (click)="goToBookingPage()">
-                <ion-icon name="bookmarks"></ion-icon>&nbsp;Booking
-              </ion-button> 
+             
             </ion-col>
           </ion-row>
-        </ion-grid>
+        </ion-grid> -->
+        <ion-button color="primary" (click)="goToBookingPage()" expand="block">Book Room</ion-button>
+
     </ion-card>
     <ion-card >
         <div (click)="goToServicePage()">
@@ -155,17 +165,19 @@
           and climb a mountain or spend a week in the woods. Wash your spirit clean.
         </ion-card-content>
         </div>
-        <ion-grid fixed="false">
-            <ion-row>              
-              <ion-col align-self-center> &nbsp;
-              </ion-col>
-              <ion-col align-self-end>
-                <ion-button fill="clear" (click)="goToBookingPage()">
-                  <ion-icon name="bookmarks"></ion-icon>&nbsp;Booking
-                </ion-button> 
-              </ion-col>
-            </ion-row>
-          </ion-grid>
+        <!-- <ion-grid fixed="false">
+          <ion-row>
+            <ion-col align-self-center> &nbsp;
+            </ion-col>
+            <ion-col align-self-end>
+              <ion-button fill="clear" (click)="goToBookingPage()">
+                <ion-icon name="bookmarks"></ion-icon>&nbsp;Booking
+              </ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-grid> -->
+        <ion-button color="primary" (click)="goToBookingPage()" expand="block">Book Room</ion-button>
+
       </ion-card>
       <ion-card>
         <div  (click)="goToServicePage()">
@@ -180,7 +192,7 @@
             and climb a mountain or spend a week in the woods. Wash your spirit clean.
           </ion-card-content>
         </div>
-          <ion-grid fixed="false">
+          <!-- <ion-grid fixed="false">
               <ion-row>              
                 <ion-col align-self-center> &nbsp;
                 </ion-col>
@@ -190,8 +202,10 @@
                   </ion-button> 
                 </ion-col>
               </ion-row>
-            </ion-grid>
-        </ion-card>
+            </ion-grid> -->
+            <ion-button color="primary" (click)="goToBookingPage()" expand="block">Book Room</ion-button>
+
+          </ion-card>
         <ion-card >
             <div (click)="goToServicePage()">
             <ion-card-header>
@@ -204,7 +218,7 @@
               and climb a mountain or spend a week in the woods. Wash your spirit clean.
             </ion-card-content>
             </div>
-            <ion-grid fixed="false">
+            <!-- <ion-grid fixed="false">
                 <ion-row>              
                   <ion-col align-self-center> &nbsp;
                   </ion-col>
@@ -214,9 +228,12 @@
                     </ion-button> 
                   </ion-col>
                 </ion-row>
-              </ion-grid>
-          </ion-card>
+              </ion-grid> -->
+              <ion-button color="primary" (click)="goToBookingPage()" expand="block">Book Room</ion-button>
+
+            </ion-card>
   <ion-card>
       <iframe width="100%"  src="https://www.youtube.com/embed/2nGXhTR51Eo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </ion-card>     
+    </ion-card>  
+    <ion-button color="primary" (click)="goToBrochurePage()" expand="block">Download Brochure</ion-button>   
 </ion-content>
