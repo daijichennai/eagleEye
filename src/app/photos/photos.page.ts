@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
-import{ ModalController } from '@ionic/angular';
+import{ ModalController,Platform } from '@ionic/angular';
 import { ImageModalPage } from '../image-modal/image-modal.page';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 @Component({
   selector: 'app-photos',
   templateUrl: './photos.page.html',
@@ -16,13 +17,22 @@ export class PhotosPage implements OnInit {
     spaceBetween: 20,
   };
   
-  constructor(
-              
-              private modalController: ModalController
+  constructor(              
+              private modalController: ModalController,
+              private so: ScreenOrientation,
+              private platform: Platform,
               ){
 
   }
+  ngOnInit() {
+    this.platform.backButton.subscribe(() => {          
+      this.so.lock(this.so.ORIENTATIONS.PORTRAIT);        
+  });
+  }
+  
+
   openPreview(img) {
+    this.so.lock(this.so.ORIENTATIONS.LANDSCAPE);
     this.modalController.create({
       component: ImageModalPage,
       componentProps: {
@@ -32,6 +42,5 @@ export class PhotosPage implements OnInit {
       modal.present();
     });
   }
-  ngOnInit() {
-  }
+ 
 }

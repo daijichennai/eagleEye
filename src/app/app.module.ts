@@ -12,6 +12,7 @@ import { DatePicker } from '@ionic-native/date-picker/ngx';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import{PhotosPageModule} from './photos/photos.module';
 import { ImageModalPageModule } from './image-modal/image-modal.module';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
@@ -27,6 +28,7 @@ import { ImageModalPageModule } from './image-modal/image-modal.module';
     DatePicker,
     PhotosPageModule,    
     AngularFontAwesomeModule,
+    ScreenOrientation,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]

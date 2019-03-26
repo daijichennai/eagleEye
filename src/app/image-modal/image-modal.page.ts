@@ -1,5 +1,7 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { NavParams, ModalController } from '@ionic/angular';
+import { ScreenOrientation } from '@ionic-native/screen-orientation/ngx';
+
 @Component({
   selector: 'app-image-modal',
   templateUrl: './image-modal.page.html',
@@ -15,7 +17,9 @@ export class ImageModalPage implements OnInit {
       maxRatio: 5
     }
   };
-  constructor(private navParams: NavParams, private modalController: ModalController) { }
+  constructor(private navParams: NavParams,
+              private so: ScreenOrientation,
+              private modalController: ModalController) { }
 
   ngOnInit() {
     this.img = this.navParams.get('img');
@@ -31,5 +35,7 @@ export class ImageModalPage implements OnInit {
  
   close() {
     this.modalController.dismiss();
+    this.so.lock(this.so.ORIENTATIONS.PORTRAIT);
+
   }
 }
